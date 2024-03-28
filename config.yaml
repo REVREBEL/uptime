@@ -1,6 +1,6 @@
 settings:
   title: 'REVREBEL UPTIME'
-  url: 'https://status-page.revrebel.io' # used for Slack messages
+  url: 'https://uptime.revrebel.io' # used for Slack messages
   logo: logo-192x192.png # image in ./public/ folder
   daysInHistogram: 90 # number of days you want to display in histogram
   collectResponseTimes: true # collects avg response times from CRON locations
@@ -15,10 +15,10 @@ settings:
   dayInHistogramNotOperational: ' incident(s)' # xx incident(s) recorded
 
 monitors:
-  - id: workers-cloudflare-com # unique identifier
-    name: workers.cloudflare.com
-    description: 'You write code. They handle the rest.' # default=empty
-    url: 'https://workers.cloudflare.com/' # URL to fetch
+  - id: uptime.rebel-camp.workers.dev # unique identifier
+    name: uptime.revrebel.io
+    description: 
+    url: 'uptime.revrebel.io' # URL to fetch
     method: GET # default=GET
     expectStatus: 200 # operational status, default=200
     followRedirect: false # should fetch follow redirects, default=false
