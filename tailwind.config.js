@@ -1,6 +1,6 @@
 
-const plugin = require("tailwindcss/plugin");
 const colors = require("tailwindcss/colors");
+
 
 module.exports = {
   purge: {
@@ -816,31 +816,6 @@ module.exports = {
     wordBreak: ["responsive"],
     zIndex: ["responsive", "focus-within", "focus"],
   },
-  plugins: [
-    plugin(function ({ addComponents }) {
-      addComponents({
-        ".btn": {
-          backgroundColor: "#1c437f",
-          borderColor: "#1c437f",
-          borderRadius: "5px",
-          borderStyle: "solid",
-          borderWidth: "4px",
-          color: "white",
-          cursor: "pointer",
-          display: "inline-block",
-          fontFamily: "Khand, Impact, sans-serif",
-          fontSize: "1rem",
-          fontWeight: "700",
-          lineHeight: "1em",
-          padding: "1rem 1.5rem",
-          textAlign: "center",
-          textDecoration: "none",
-          textTransform: "uppercase",
-          transitionDuration: "200ms",
-          transitionProperty: "all",
-          transitionTimingFunction: "ease",
-        }
-      })
-    })
-  ]
+  plugins: [],
+}
 }
