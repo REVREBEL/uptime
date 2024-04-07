@@ -81,7 +81,27 @@ module.exports = {
       pulse: "pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite",
       bounce: "bounce 1s infinite",
     },
-    backgroundColor: (theme) => theme("colors"),
+    backgroundColor: {
+      'bg-blue': "#1C447F",
+      'bg-indigo': "#5E688D",
+      'bg-purple': "#5E688D",
+      'bg-pink': "#F08D19",
+      'bg-red': "#Ef5353",
+      'bg-orange': "#E4782E",
+      'bg-lightOrange': "#F08D19",
+      'bg-darkOrange': "#E4782E",
+      'bg-yellow': "#FAD644",
+      'bg-green': "#5B8AA0",
+      'bg-teal': "#5B8AA0",
+      'bg-cyan': "#B2D3DE",
+      'bg-white': "#FFF",
+      'bg-offWhite': "#FAFAFA",
+      'bg-gray': "#575757",
+      'bg-grayDark': "#2F2F2F",
+      'bg-black': "#2F2F2F",
+    },
+
+    
     backgroundImage: {
       none: "none",
       "gradient-to-t": "linear-gradient(to top, var(--tw-gradient-stops))",
