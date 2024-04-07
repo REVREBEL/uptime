@@ -5,17 +5,17 @@ settings:
   daysInHistogram: 90 # number of days you want to display in histogram
   collectResponseTimes: true # collects avg response times from CRON locations
 
-  allmonitorsOperational: 'All Systems Operational'
-  notAllmonitorsOperational: 'Not All Systems Operational'
+  allmonitorsOperational: 'All Systems Go'
+  notAllmonitorsOperational: 'Houston, we have a site down'
   monitorLabelOperational: 'Operational'
-  monitorLabelNotOperational: 'Not Operational'
+  monitorLabelNotOperational: "Monkey, We've got a 404"
   monitorLabelNoData: 'No data'
   dayInHistogramNoData: 'No data'
   dayInHistogramOperational: 'All good'
   dayInHistogramNotOperational: ' incident(s)' # xx incident(s) recorded
 
 monitors:
-  - id: uptime.rebel-camp.workers.dev # unique identifier
+  - id: cf-worker-uptime.revrebel.io # unique identifier
     name: uptime.revrebel.io
     description: 
     url: 'uptime.revrebel.io' # URL to fetch
